@@ -5,9 +5,6 @@ const morgan = require("morgan");
 const helmet = require("helmet");
 const cors = require("cors");
 
-// const spectacle = require("./spectacle");
-// const reservation = require("./reservation");
-
 const port = 3001;
 
 const app = express();
