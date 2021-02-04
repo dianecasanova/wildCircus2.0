@@ -9,7 +9,7 @@ import logo from "../../images/logo_elephant.png";
 const Footer = () => {
   return (
     <Background>
-      <Container fluid>
+      <DivContainer fluid>
         <Row>
           <Col>
             <Logo1 src={logo} alt="logo wild circus" />
@@ -60,18 +60,25 @@ const Footer = () => {
             </Row>
           </Col>
         </Row>
-      </Container>
+      </DivContainer>
     </Background>
   );
 };
 
 const Background = styled.div`
   background-color: #cc3900;
+  position: absolute;
+  bottom: -40vh;
   width: 100%;
-  padding: 35px 0;
-  margin-top: 20px;
+  padding-top: 50px;
+  height: 50px;
 `;
 
+const DivContainer = styled.div`
+  background-color: #cc3900;
+  margin: 0;
+  position: relative;
+`;
 const List = styled.li`
   padding-top: 20px;
   list-style: none;

@@ -31,14 +31,14 @@ const items = [
 
 const aPropos = [
   {
-    path: "./apropos",
+    path: "/apropos",
   },
 ];
 
 const Home = () => {
   return (
     <>
-      <CarrouselStyle>
+      <CarrouselStyle id="apropos">
         <Carousel items={items} />
       </CarrouselStyle>
       {aPropos.map((i, index) => (
