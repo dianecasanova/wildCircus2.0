@@ -2,7 +2,6 @@ import {
   Card,
   Button,
   CardImg,
-  CardTitle,
   CardText,
   CardDeck,
   CardSubtitle,
