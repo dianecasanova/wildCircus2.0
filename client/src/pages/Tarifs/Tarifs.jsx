@@ -8,11 +8,11 @@ import {
   AvRadioGroup,
   AvRadio,
   AvCheckboxGroup,
-  AvCheckbox,
 } from "availity-reactstrap-validation";
-import { Button, Label, FormGroup, CustomInput } from "reactstrap";
+import { Button, Label, FormGroup } from "reactstrap";
 import styled from "styled-components";
 import Footer from "../../components/Footer/Footer";
+import AvCheckbox from "availity-reactstrap-validation/lib/AvCheckbox";
 
 export default class Tarifs extends React.Component {
   render() {
