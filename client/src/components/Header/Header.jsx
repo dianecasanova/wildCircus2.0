@@ -41,13 +41,10 @@ const Header = () => {
             <StyledAHeader to="/spectacles">SPECTACLES</StyledAHeader>
           </Navlink>
           <Navlink>
-            <StyledAHeader to="/tournee">TOURNEE</StyledAHeader>
+            <StyledAHeader to="/map">TOURNEE</StyledAHeader>
           </Navlink>
           <Navlink>
             <StyledAHeader to="/tarifs">TARIFS</StyledAHeader>
-          </Navlink>
-          <Navlink>
-            <StyledAHeader to="/apropos">NOTRE HISTOIRE</StyledAHeader>
           </Navlink>
         </ItemsList>
       </Wrapper>
