@@ -1,7 +1,6 @@
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
-const morgan = require("morgan");
 const helmet = require("helmet");
 const cors = require("cors");
 
@@ -9,7 +8,6 @@ const port = 3001;
 
 const app = express();
 
-app.use(morgan("dev"));
 app.use(helmet());
 app.use(cors());
 app.use(bodyParser.json());
