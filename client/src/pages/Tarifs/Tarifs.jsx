@@ -11,7 +11,6 @@ import {
 } from "availity-reactstrap-validation";
 import { Button, Label, FormGroup } from "reactstrap";
 import styled from "styled-components";
-import Footer from "../../components/Footer/Footer";
 import AvCheckbox from "availity-reactstrap-validation/lib/AvCheckbox";
 
 export default class Tarifs extends React.Component {
@@ -75,14 +74,13 @@ export default class Tarifs extends React.Component {
             </FormGroup>
           </AvForm>
         </DivContainer>
-        <Footer />
       </>
     );
   }
 }
 
 const TitleSection1 = styled.div`
-  background-color: #f6f6f6;
+  background-color: #dcdcdc;
   padding: 20px 0;
   font-family: "DM Sans", sans-serif;
   margin: 5vh;

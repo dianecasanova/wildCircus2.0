@@ -49,7 +49,7 @@ const Spectacles = (props) => {
 };
 
 const TitleSection1 = styled.div`
-  background-color: #f6f6f6;
+  background-color: #dcdcdc;
   padding: 20px 0;
   font-family: "DM Sans", sans-serif;
   margin: 5vh;

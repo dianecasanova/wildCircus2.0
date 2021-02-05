@@ -5,6 +5,7 @@ import Spectacles from "./pages/Spectacles/Spectacles";
 import Consumer from "./pages/Tournee/Consumer";
 import Tarifs from "./pages/Tarifs/Tarifs";
 import Contact from "./components/Footer/ContactForm";
+import Footer from "./components/Footer/Footer";
 
 const Router = () => {
   return (
@@ -15,9 +16,9 @@ const Router = () => {
         <Route exact path="/spectacles" component={Spectacles} />
         <Route exact path="/map" component={Consumer} />
         <Route exact path="/tarifs" component={Tarifs} />
-
         <Route exact path="/contact" component={Contact} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 };

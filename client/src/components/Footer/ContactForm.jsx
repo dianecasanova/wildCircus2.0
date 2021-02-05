@@ -4,7 +4,6 @@ import { Form, FormGroup, Input, Col, Row, Container } from "reactstrap";
 import styled from "styled-components";
 import logo from "../../images/logo_elephant.png";
 import photoContact from "../../images/contact.jpg";
-import Footer from "./Footer";
 
 function Contact() {
   const { register, handleSubmit, errors } = useForm();
@@ -120,7 +119,6 @@ function Contact() {
           </Col>
         </RowReverse>
       </Container>
-      <Footer />
     </>
   );
 }
