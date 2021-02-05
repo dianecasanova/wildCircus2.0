@@ -67,11 +67,11 @@ const Footer = () => {
 
 const Background = styled.div`
   background-color: #cc3900;
-  position: absolute;
-  bottom: -40vh;
+  position: static;
+  bottom: 0;
   width: 100%;
-  padding-top: 50px;
-  height: 50px;
+  padding-top: 10px;
+  height: 30px;
 `;
 
 const DivContainer = styled.div`

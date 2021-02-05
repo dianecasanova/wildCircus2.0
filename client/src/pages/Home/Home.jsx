@@ -1,6 +1,5 @@
 import { UncontrolledCarousel } from "reactstrap";
 import styled from "styled-components";
-import Footer from "../../components/Footer/Footer";
 import circus from "../../images/circus_titre.jpg";
 import circus1 from "../../images/fond_cirque.jpg";
 import circus2 from "../../images/fond_cirque.png";
@@ -62,7 +61,6 @@ const Home = () => {
           </Paragraphe>
         </Col>
       </Row>
-      <Footer />
     </>
   );
 };

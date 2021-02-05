@@ -5,7 +5,6 @@ import TransitLayer from "./TransitLayer";
 import getPlaces from "./GetPlaces";
 
 import styled from "styled-components";
-import Footer from "../../components/Footer/Footer";
 
 export default function Consumer() {
   const places = getPlaces();
@@ -22,31 +21,29 @@ export default function Consumer() {
             Barcelone, Paris, Dublin, Moscou, Sydney, Singapour
           </Paragraphe>
         </TitleSection1>
-        <DivContainer fluid="true">
-          <Map
-            zoom={10}
-            center={{
-              lat: places[placeIndex].lat,
-              lng: places[placeIndex].lng,
-            }}
-            events={{ onBoundsChangerd: (arg) => setBound(arg) }}
-          >
-            <TransitLayer enabled={transitLayerEnabled} />
-            {places.map((m, index) => (
-              <Marker
-                key={m.id}
-                active={placeIndex === index}
-                title={"marker id: " + m.id}
-                position={{ lat: m.lat, lng: m.lng }}
-                events={{
-                  onClick: () => window.alert(`marker ${index} clicked`),
-                }}
-              />
-            ))}
-          </Map>
-        </DivContainer>
+
+        <Map
+          zoom={10}
+          center={{
+            lat: places[placeIndex].lat,
+            lng: places[placeIndex].lng,
+          }}
+          events={{ onBoundsChangerd: (arg) => setBound(arg) }}
+        >
+          <TransitLayer enabled={transitLayerEnabled} />
+          {places.map((m, index) => (
+            <Marker
+              key={m.id}
+              active={placeIndex === index}
+              title={"marker id: " + m.id}
+              position={{ lat: m.lat, lng: m.lng }}
+              events={{
+                onClick: () => window.alert(`marker ${index} clicked`),
+              }}
+            />
+          ))}
+        </Map>
       </div>
-      <Footer />
     </>
   );
 }
@@ -59,7 +56,7 @@ const DivContainer = styled.div`
 `;
 
 const TitleSection1 = styled.div`
-  background-color: #f6f6f6;
+  background-color: #dcdcdc;
   padding: 20px 0;
   font-family: "DM Sans", sans-serif;
   margin: 5vh;
